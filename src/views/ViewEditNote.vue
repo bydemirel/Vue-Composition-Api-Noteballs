@@ -39,6 +39,7 @@ import { useStoreNotes } from "../stores/storeNotes";
 /* router */
 const route = useRoute()
 const router = useRouter()
+
 /* store */
 const storeNotes = useStoreNotes();
 

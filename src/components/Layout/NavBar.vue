@@ -54,6 +54,7 @@
 </template>
 
 <script setup>
+
 /* imports*/
 import { ref } from "vue";
 import { onClickOutside } from "@vueuse/core";
