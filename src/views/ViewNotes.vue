@@ -28,10 +28,11 @@
 <script setup>
 /* imports*/
 
-import { ref } from "@vue/reactivity";
+import { ref, watch } from "vue";
 import { useStoreNotes } from "../stores/storeNotes";
 import Note from "../components/Notes/Note.vue";
 import AddEditNote  from "../components/Notes/AddEditNote.vue";
+import { useWatchCharacters} from '../use/useWatchCharacters';
 
 /* store */
 
@@ -47,4 +48,8 @@ const addNote = () => {
   newNote.value = "";
   addEditNoteRef.value.focusTextarea();
 };
+
+/* watch characters */
+useWatchCharacters(newNote,100)
+
 </script>

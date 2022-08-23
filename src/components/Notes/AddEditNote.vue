@@ -13,6 +13,8 @@
             class="textarea"
             ref="textareaRef"
             :placeholder="placeholder"
+            v-autofocus
+            maxlength="100"
           ></textarea>
         </div>
       </div>
@@ -29,6 +31,7 @@
 <script setup>
 /* imports*/
 import { ref } from "@vue/reactivity";
+import {vAutofocus} from '../../directives/vAutofocus';
 
 /* props*/
 
@@ -65,4 +68,6 @@ const focusTextarea = () => {
 defineExpose({
   focusTextarea,
 });
+
+/* directives */
 </script>
