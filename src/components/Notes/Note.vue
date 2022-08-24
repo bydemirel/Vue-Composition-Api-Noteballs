@@ -57,7 +57,7 @@ const storeNotes = useStoreNotes();
 /* date formatted */
 const dateFormatted  = computed(()=>{
   let date = new Date(parseInt(props.note.date))
-  return useDateFormat(date,'MM-DD--YYYY HH:mm').value
+  return useDateFormat(date,'MM-DD-YYYY HH:mm').value
 })
 
 /* character length*/
